@@ -17,8 +17,8 @@
       <file leaf-file-name="Cohort.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cohort.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="54" column="121" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="121" />
+            <state relative-caret-position="0">
+              <caret line="54" column="121" lean-forward="false" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="121" />
               <folding />
             </state>
           </provider>
@@ -27,7 +27,7 @@
       <file leaf-file-name="lib.php" pinned="false" current-in-tab="false">
         <entry file="file://C:/Project/docker-moodle-test-onlain/cohort/lib.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2142">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <marker date="1518698927051" expanded="true" signature="4332:4405" ph="UPDATE {coho... " />
@@ -39,7 +39,7 @@
       <file leaf-file-name="curl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/curl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3281">
+            <state relative-caret-position="6358">
               <caret line="397" column="13" lean-forward="false" selection-start-line="397" selection-start-column="13" selection-end-line="397" selection-end-column="13" />
               <folding />
             </state>
@@ -49,8 +49,8 @@
       <file leaf-file-name="client.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+            <state relative-caret-position="556">
+              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -64,6 +64,7 @@
       <find>moodle_services_service</find>
       <find>variable_get</find>
       <find>post</find>
+      <find>br</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,7 +89,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1280" />
@@ -110,8 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,12 +122,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/docker-moodle-test-onlain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../online-landing.com" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -158,18 +159,19 @@
       <workItem from="1518087967232" duration="4512000" />
       <workItem from="1518681889091" duration="7965000" />
       <workItem from="1518698058136" duration="5438000" />
-      <workItem from="1518768179635" duration="4075000" />
+      <workItem from="1518768179635" duration="4542000" />
+      <workItem from="1518779231279" duration="5081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21990000" />
+    <option name="totallyTimeSpent" value="27538000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26028278" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26349613" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -200,6 +202,40 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Cohort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="121" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Project/docker-moodle-test-onlain/cohort/lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518698927051" expanded="true" signature="4332:4405" ph="UPDATE {coho... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6358">
+          <caret line="397" column="13" lean-forward="false" selection-start-line="397" selection-start-column="13" selection-end-line="397" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -274,7 +310,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/curl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3281">
+        <state relative-caret-position="6358">
           <caret line="397" column="13" lean-forward="false" selection-start-line="397" selection-start-column="13" selection-end-line="397" selection-end-column="13" />
           <folding />
         </state>
@@ -282,15 +318,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cohort.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="54" column="121" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="121" />
+        <state relative-caret-position="0">
+          <caret line="54" column="121" lean-forward="false" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="121" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Project/docker-moodle-test-onlain/cohort/lib.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2142">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1518698927051" expanded="true" signature="4332:4405" ph="UPDATE {coho... " />
@@ -298,10 +334,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../project landing/seo_pages/6page/6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="178" column="40" lean-forward="true" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        <state relative-caret-position="556">
+          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="9" />
           <folding />
         </state>
       </provider>
