@@ -60,10 +60,11 @@ $user2->timezone = 'Pacific/Port_Moresby';
 $users = array($user2);
 $paramsUser = array('users' => $users);
 
-$members[0]['cohorttype']['type']= 'id' ;
-$members[0]['cohorttype']['value']= '10';
+
+$members[0]['cohorttype']['type']= 'idnumber' ;
+$members[0]['cohorttype']['value']= '123';
 $members[0]['usertype']['type']= 'id';
-$members[0]['usertype']['value']= '3';
+$members[0]['usertype']['value']= '4';
 
 $paramsCohor=  array('members'=>$members);
 
