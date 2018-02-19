@@ -40,7 +40,6 @@ require_once('./curl.php');
 //    array('type' => $preferencename2, 'value' => 'preferencevalue2'));
 
 
-
 function getServerurl($getMetod)
 {
     $token = '2bbc8414d1b551dfc834c5d88aef8688';
@@ -56,14 +55,15 @@ function getRestformat()
     return $restformat;
 }
 
-function add_cohort_members()
+function add_cohort_members($emailUser)
 {
     $curl = new curl;
+    $getIdUser = getIdUser($emailUser);
 
     $members[0]['cohorttype']['type'] = 'idnumber';
     $members[0]['cohorttype']['value'] = '123';
     $members[0]['usertype']['type'] = 'id';
-    $members[0]['usertype']['value'] = '5';
+    $members[0]['usertype']['value'] = $getIdUser;
     $paramsCohor = array('members' => $members);
 
     $serverurl = getServerurl('core_cohort_add_cohort_members');
@@ -71,16 +71,17 @@ function add_cohort_members()
     $resp = $curl->post($serverurl . $restformat, $paramsCohor);
     return $resp;
 }
+
 function create_users()
 {
     $user2 = new stdClass();
     $curl = new curl;
 
-    $user2->username = 'testusername8';
+    $user2->username = 'testusername11';
     $user2->password = 'Pendalf121#';
-    $user2->firstname = 'testfirstname8';
-    $user2->lastname = 'testlastname8';
-    $user2->email = 'testemail8@moodle.com';
+    $user2->firstname = 'testfirstname11';
+    $user2->lastname = 'testlastname11';
+    $user2->email = 'testemail11@moodle.com';
     $user2->timezone = 'Pacific/Port_Moresby';
     $users = array($user2);
     $paramsUser = array('users' => $users);
@@ -90,29 +91,35 @@ function create_users()
     $resp = $curl->post($serverurl . $restformat, $paramsUser);
     return $resp;
 }
-function getIdUser()
+
+function getIdUser($emailUser)
 {
-    $user2 = new stdClass();
     $curl = new curl;
 
-    $criteria[0]['key']= 'id';
-    $criteria[0]['value']= '2';
-    $paramsUser= array('criteria' => $criteria);
+    $criteria[0]['key'] = 'email';
+    $criteria[0]['value'] = $emailUser;
+    $paramsUser = array('criteria' => $criteria);
 
     $serverurl = getServerurl('core_user_get_users');
     $restformat = getRestformat();
     $resp = $curl->post($serverurl . $restformat, $paramsUser);
-    return $resp;
+    $resp = json_decode($resp, true);
+
+    return $resp["users"][0]["id"];
 }
 
 /// REST CALL
 header('Content-Type: text/plain');
-//$user = create_users();
-//$cohor = add_cohort_members();
-$id = getIdUser();
-//echo $user;
-echo "<br/>";
-//echo $cohor;
-echo "<br/>";
-echo $id;
+$userJson = create_users();
+$user = json_decode($userJson, true);
+
+$cohorJson = add_cohort_members('testemail11@moodle.com');
+$cohor = json_decode($cohorJson, true);
+if ($cohor["warnings"][0] == '' && $user["message"] == '') {
+    echo 'Пользовать создан и добавлен в группу';
+} elseif ($user["message"] !== '') {
+    echo $user["message"].PHP_EOL;
+} if ($cohor["warnings"][0] !== '') {
+    echo $cohor["warnings"][0]["message"].PHP_EOL;
+    }
 
